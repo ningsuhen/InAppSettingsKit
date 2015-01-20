@@ -20,6 +20,7 @@
 #import "IASKSettingsStore.h"
 #import "IASKViewController.h"
 #import "IASKSpecifier.h"
+#import "UIImage+Tint.h"
 
 @class IASKSettingsReader;
 @class IASKAppSettingsViewController;

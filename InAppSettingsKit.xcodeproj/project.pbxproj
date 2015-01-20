@@ -12,6 +12,8 @@
 		AA627D2819F67B7C0079AAE8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA627D2719F67B7C0079AAE8 /* MessageUI.framework */; };
 		AA627D2919F67B8E0079AAE8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA627D2719F67B7C0079AAE8 /* MessageUI.framework */; };
 		AA627D3B19F695F30079AAE8 /* IASKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA627D2B19F695F30079AAE8 /* IASKLocalizable.strings */; };
+		DEBB1E401A6ED06A00F3B312 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBB1E3E1A6ED06A00F3B312 /* UIImage+Tint.m */; };
+		DEBB1E411A6ED06A00F3B312 /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = DEBB1E3F1A6ED06A00F3B312 /* UIImage+Tint.h */; };
 		E401BD3C16820A0D00EAF534 /* IASKAppSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC21682036500295D85 /* IASKAppSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E401BD3D16820A1700EAF534 /* IASKSpecifierValuesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC41682036500295D85 /* IASKSpecifierValuesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E401BD3E16820A1C00EAF534 /* IASKAppSettingsWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E42ADAC61682036500295D85 /* IASKAppSettingsWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +84,8 @@
 		AA627D3A19F695F30079AAE8 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/IASKLocalizable.strings; sourceTree = "<group>"; };
 		AA627D6E19F69A7F0079AAE8 /* InAppSettingsKit.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InAppSettingsKit.podspec.json; sourceTree = "<group>"; };
 		AA627D6F19F69A7F0079AAE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DEBB1E3E1A6ED06A00F3B312 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		DEBB1E3F1A6ED06A00F3B312 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
 		E401BD4A16820BBA00EAF534 /* IASKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = IASKViewController.h; sourceTree = "<group>"; };
 		E42ADA8F168202D700295D85 /* libInAppSettingsKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInAppSettingsKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42ADA92168202D700295D85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +174,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DEBB1E3D1A6ED05700F3B312 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB1E3E1A6ED06A00F3B312 /* UIImage+Tint.m */,
+				DEBB1E3F1A6ED06A00F3B312 /* UIImage+Tint.h */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		E42ADA86168202D700295D85 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +218,7 @@
 		E42ADA94168202D700295D85 /* InAppSettingsKit */ = {
 			isa = PBXGroup;
 			children = (
+				DEBB1E3D1A6ED05700F3B312 /* Lib */,
 				E42ADAC81682036500295D85 /* Controllers */,
 				E42ADAD31682036500295D85 /* Models */,
 				AA627D2A19F695F30079AAE8 /* Resources */,
@@ -381,6 +395,7 @@
 				E401BD4916820A2D00EAF534 /* IASKTextField.h in Headers */,
 				E401BD4B16820BBA00EAF534 /* IASKViewController.h in Headers */,
 				1AA106821916565D4D6221F9 /* IASKMultipleValueSelection.h in Headers */,
+				DEBB1E411A6ED06A00F3B312 /* UIImage+Tint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +526,7 @@
 				E4EDC5A616820D9500BD3CA9 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
 				E4EDC5A816820D9500BD3CA9 /* IASKSlider.m in Sources */,
 				E4EDC5A916820D9500BD3CA9 /* IASKSwitch.m in Sources */,
+				DEBB1E401A6ED06A00F3B312 /* UIImage+Tint.m in Sources */,
 				E4EDC5AA16820D9500BD3CA9 /* IASKTextField.m in Sources */,
 				1AA1073290B7DC27EB0C6A70 /* IASKMultipleValueSelection.m in Sources */,
 			);

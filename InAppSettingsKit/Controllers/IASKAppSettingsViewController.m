@@ -26,6 +26,7 @@
 #import "IASKSpecifierValuesViewController.h"
 #import "IASKTextField.h"
 #import "IASKMultipleValueSelection.h"
+#import "UIImage+Tint.h"
 
 #if !__has_feature(objc_arc)
 #error "IASK needs ARC"
@@ -611,7 +612,7 @@ CGRect IASKCGRectSwap(CGRect rect);
 		cell.textLabel.text = specifier.title;
 	}
     
-	cell.imageView.image = specifier.cellImage;
+	cell.imageView.image = specifier.cellImage; //imageTintedWithColor:[UIColor blueColor]];//Simple hack to suppor tinted image
 	cell.imageView.highlightedImage = specifier.highlightedCellImage;
     
 	if (![specifier.type isEqualToString:kIASKPSMultiValueSpecifier] && ![specifier.type isEqualToString:kIASKPSTitleValueSpecifier] && ![specifier.type isEqualToString:kIASKPSTextFieldSpecifier]) {
