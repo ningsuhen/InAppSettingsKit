@@ -611,8 +611,10 @@ CGRect IASKCGRectSwap(CGRect rect);
 	} else {
 		cell.textLabel.text = specifier.title;
 	}
-    
-	cell.imageView.image = specifier.cellImage; //imageTintedWithColor:[UIColor blueColor]];//Simple hack to suppor tinted image
+//    var imageTintColor = [UIColor blueColor];
+    UIColor *defaultTint = [[UIColor alloc ] initWithRed:0.0f green:(122.0f/255.0f) blue:1.0f alpha:1.0f];
+//    if let imageTinColor = specifier.objectForKey("PSImageTintColor") as UIColor
+	cell.imageView.image = [specifier.cellImage imageTintedWithColor:defaultTint];//Simple hack to suppor tinted image//specifier.cellImage; //
 	cell.imageView.highlightedImage = specifier.highlightedCellImage;
     
 	if (![specifier.type isEqualToString:kIASKPSMultiValueSpecifier] && ![specifier.type isEqualToString:kIASKPSTitleValueSpecifier] && ![specifier.type isEqualToString:kIASKPSTextFieldSpecifier]) {
